@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ipass</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ip">192.168.43.198</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard_private">DashboardPrivate</string>
+</resources>

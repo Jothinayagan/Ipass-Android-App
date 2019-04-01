@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/federant"
+        android:text="Private Channel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="255dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="25dp">
+
+            <EditText
+                android:id="@+id/idEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:drawableLeft="@drawable/ic_person_pink_24dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/idPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_lock_pink_24dp"
+                android:layout_below="@+id/idEmail"
+                android:layout_marginTop="25dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/idLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idPassword"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/idLogin"
+                android:layout_marginTop="14dp"
+                android:text="Create Account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

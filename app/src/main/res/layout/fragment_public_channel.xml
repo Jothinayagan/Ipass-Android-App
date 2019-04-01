@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="186dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/federant"
+        android:text="Public Channel"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="335dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="25dp">
+
+            <EditText
+                android:id="@+id/idApi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="API Key"
+                android:inputType="text|textCapCharacters" />
+
+            <Button
+                android:id="@+id/idView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idApi"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="View"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
