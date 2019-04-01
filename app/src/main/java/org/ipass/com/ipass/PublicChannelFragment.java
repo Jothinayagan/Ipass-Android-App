@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /**
- * Created by Abishek on 12-Apr-18.
+ * Created by Gowtham on 12-Apr-18.
  */
 
 public class PublicChannelFragment extends Fragment {
