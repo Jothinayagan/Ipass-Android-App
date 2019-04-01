@@ -1,7 +1,7 @@
 package org.ipass.com.ipass;
 
 /**
- * Created by Abishek on 13-Apr-18.
+ * Created by Gowtham on 13-Apr-18.
  */
 
 public class AppConfig {
